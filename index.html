@@ -1,20 +1,580 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to new webpage</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BoscoSoftTech - Enterprise ERP Solutions</title>
+  <link rel="icon" type="image/png" href="images/fav-icon.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
 </head>
-<body>
-    <h1>This is new webpage By Punitha</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, qui porro inventore placeat velit veniam nostrum dolorum dolore laboriosam autem quae quos, expedita blanditiis iste earum quidem id architecto reprehenderit!</p>
-    <div class="container">
-        <div class="one">New fontend branch chnages </div>
-        <div class="two"></div>
-        <div class="three"></div>
-        <h1>This is very importent</h1>
-        Sample change to work
-        <h5>This for work not so intersting</h5>
+
+<body class="page">
+  <header class="header">
+    <div class="header-top">
+      <div class="shell header-top__inner">
+        <div class="header-contact">
+          <a href="mailto:info@boscosofttech.com" class="header-contact__item">
+            <i class="fas fa-envelope"></i>
+            <span>info@boscosofttech.com</span>
+          </a>
+          <a href="#" class="header-contact__item">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>123 Business Street, Suite 100, City, State 12345</span>
+          </a>
+        </div>
+        <div class="header-top-social">
+          <a href="#" aria-label="Facebook" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="Twitter" class="social-icon"><i class="fab fa-twitter"></i></a>
+          <a href="#" aria-label="Instagram" class="social-icon"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="LinkedIn" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
     </div>
+    <div class="header-main">
+      <div class="shell header-main__inner">
+        <div class="brand">
+          <img src="images/bosco-logo.png" alt="BoscoSoftTech" class="brand-logo">
+        </div>
+        <nav class="nav" id="nav">
+          <button class="nav__close" aria-label="Close menu"><i class="fas fa-times"></i></button>
+          <a href="#hero" class="nav-link">Home</a>
+          <div class="nav-dropdown">
+            <a href="#about" class="nav-link">About Us <i class="fas fa-chevron-down"></i></a>
+            <div class="dropdown-menu">
+              <a href="#about">Our Story</a>
+              <a href="#ceo">Leadership</a>
+              <a href="#why-us">Why Choose Us</a>
+            </div>
+          </div>
+          <div class="nav-dropdown nav-dropdown--mega">
+            <a href="#solutions" class="nav-link">Solutions <i class="fas fa-chevron-down"></i></a>
+            <div class="dropdown-menu mega-menu">
+              <div class="mega-menu__content">
+                <div class="mega-menu__item">
+                  <a href="#solutions" class="mega-menu__link">
+                    <i class="fas fa-cube"></i>
+                    <span class="mega-menu__title">Acme.erp</span>
+                    <span class="mega-menu__desc">Enterprise Resource Planning</span>
+                  </a>
+                </div>
+                <div class="mega-menu__item">
+                  <a href="#solutions" class="mega-menu__link">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span class="mega-menu__title">SmartSchoolPlus</span>
+                    <span class="mega-menu__desc">School Management System</span>
+                  </a>
+                </div>
+                <div class="mega-menu__item">
+                  <a href="#solutions" class="mega-menu__link">
+                    <i class="fas fa-chart-line"></i>
+                    <span class="mega-menu__title">HiGrade</span>
+                    <span class="mega-menu__desc">Grading & Assessment</span>
+                  </a>
+                </div>
+                <div class="mega-menu__item">
+                  <a href="#solutions" class="mega-menu__link">
+                    <i class="fas fa-hospital"></i>
+                    <span class="mega-menu__title">MedSysB</span>
+                    <span class="mega-menu__desc">Hospital Management</span>
+                  </a>
+                </div>
+                <div class="mega-menu__item">
+                  <a href="#solutions" class="mega-menu__link">
+                    <i class="fas fa-church"></i>
+                    <span class="mega-menu__title">CristO</span>
+                    <span class="mega-menu__desc">Church Management</span>
+                  </a>
+                </div>
+                <div class="mega-menu__item">
+                  <a href="#solutions" class="mega-menu__link">
+                    <i class="fas fa-coins"></i>
+                    <span class="mega-menu__title">MicroFUND</span>
+                    <span class="mega-menu__desc">Financial Management</span>
+                  </a>
+                </div>
+                <div class="mega-menu__item">
+                  <a href="#solutions" class="mega-menu__link">
+                    <i class="fas fa-file-invoice"></i>
+                    <span class="mega-menu__title">eAUDITHub</span>
+                    <span class="mega-menu__desc">Audit Management</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="nav-dropdown">
+            <a href="#services" class="nav-link">Services <i class="fas fa-chevron-down"></i></a>
+            <div class="dropdown-menu">
+              <a href="#services">All Services</a>
+              <a href="#services">App Modernization</a>
+              <a href="#services">Bespoke Solutions</a>
+              <a href="#services">Gen AI Systems</a>
+              <a href="#services">ERP Customization</a>
+            </div>
+          </div>
+          <a href="#career" class="nav-link">Career</a>
+          <a href="#contact" class="nav-link">Contact Us</a>
+        </nav>
+        <div class="header-actions">
+          <a href="#demo" class="btn btn--primary btn--quote">Request a Quote</a>
+          <button class="nav__toggle" aria-label="Open menu"><i class="fas fa-bars"></i></button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="hero">
+      <div class="shell">
+        <div class="hero-card">
+          <div class="hero-slider">
+            <div class="hero-slide hero-slide--active">
+              <div class="hero__grid">
+                <div class="hero__content">
+                  <p class="eyebrow eyebrow--button">INNOVATION FIRST</p>
+                  <h1>Transforming Businesses through <span class="text-blue">Digital Innovation</span></h1>
+                  <p class="lede">Providing top-tier IT solutions for modern enterprises to scale and succeed. We bridge
+                    the gap between complex problems and digital solutions.</p>
+                  <div class="hero__actions">
+                    <a href="#demo" class="btn btn--primary btn--lg">Get Started</a>
+                  </div>
+                  <div class="hero-indicators hero-indicators--inline">
+                    <span class="indicator indicator--active" data-slide="0"></span>
+                    <span class="indicator" data-slide="1"></span>
+                    <span class="indicator" data-slide="2"></span>
+                  </div>
+                </div>
+                <div class="hero__visual">
+                  <div class="media-card">
+                    <div class="media-card__image"><img src="images/slider/slider01.png" alt=""></div>
+                    <div class="media-card__overlay">
+                      <a href="#contact" class="btn btn--overlay">Schedule Consultation</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="hero-slide">
+              <div class="hero__grid">
+                <div class="hero__content">
+                  <p class="eyebrow eyebrow--button">ENTERPRISE SOLUTIONS</p>
+                  <h1>Empowering Organizations with <span class="text-blue">Advanced Technology</span></h1>
+                  <p class="lede">Comprehensive ERP solutions tailored for schools, hospitals, churches, and corporate
+                    entities. Streamline operations and drive growth.</p>
+                  <!-- <div class="hero__actions">
+                    <a href="#demo" class="btn btn--primary btn--lg">Get Started</a>
+                  </div> -->
+                  <div class="hero-indicators hero-indicators--inline">
+                    <span class="indicator" data-slide="0"></span>
+                    <span class="indicator indicator--active" data-slide="1"></span>
+                    <span class="indicator" data-slide="2"></span>
+                  </div>
+                </div>
+                <div class="hero__visual">
+                  <div class="media-card">
+                    <div class="media-card__image"><img src="images/slider/slider02.png" alt=""></div>
+                    <!-- <div class="media-card__overlay">
+                      <a href="#contact" class="btn btn--overlay">Schedule Consultation</a>
+                    </div> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="hero-slide">
+              <div class="hero__grid">
+                <div class="hero__content">
+                  <p class="eyebrow eyebrow--button">TRUSTED PARTNER</p>
+                  <h1>Delivering Excellence in <span class="text-blue">Digital Transformation</span></h1>
+                  <p class="lede">Join 2500+ satisfied customers who trust BoscoSoftTech for their digital
+                    transformation journey. Experience the difference.</p>
+                  <div class="hero__actions">
+                    <a href="#demo" class="btn btn--primary btn--lg">Get Started</a>
+                  </div>
+                  <div class="hero-indicators hero-indicators--inline">
+                    <span class="indicator" data-slide="0"></span>
+                    <span class="indicator" data-slide="1"></span>
+                    <span class="indicator indicator--active" data-slide="2"></span>
+                  </div>
+                </div>
+                <div class="hero__visual">
+                  <div class="media-card">
+                    <div class="media-card__image"><img src="images/slider/slider03.png" alt=""></div>
+                    <!-- <div class="media-card__overlay">
+                      <a href="#contact" class="btn btn--overlay">Schedule Consultation</a>
+                    </div> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- <button class="hero-nav hero-nav--prev" aria-label="Previous slide"><i class="fas fa-chevron-left"></i></button>
+          <button class="hero-nav hero-nav--next" aria-label="Next slide"><i class="fas fa-chevron-right"></i></button> -->
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="about">
+      <div class="shell">
+        <div class="about-grid">
+          <div class="about-content">
+            <p class="eyebrow">WHO WE ARE</p>
+            <h2>About BoscoSoftTech</h2>
+            <p>BoscoSoftTech is a leading provider of enterprise resource planning solutions, dedicated to transforming
+              how organizations manage their operations. With a focus on ethical practices, innovation, and client
+              success, we deliver comprehensive ERP systems tailored to the unique needs of schools, hospitals,
+              churches, and corporate entities.</p>
+            <p>Our mission is to empower organizations with technology that drives efficiency, transparency, and growth.
+              We combine deep industry expertise with cutting-edge technology to create solutions that not only meet
+              today's challenges but anticipate tomorrow's opportunities.</p>
+            <a href="#" class="link">Learn more about our vision →</a>
+          </div>
+          <div class="trust-indicators">
+            <h2>TRUST INDICATORS</h2>
+            <div class="trust-grid">
+              <div class="trust-item">
+                <span class="trust-value">25+</span>
+                <span class="trust-label">Years Experience</span>
+              </div>
+              <div class="trust-item">
+                <span class="trust-value">07</span>
+                <span class="trust-label">Specialized Solutions</span>
+              </div>
+              <div class="trust-item">
+                <span class="trust-value">200+</span>
+                <span class="trust-label">Professionals</span>
+              </div>
+              <div class="trust-item">
+                <span class="trust-value">2500+</span>
+                <span class="trust-label">Happy Customers</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="solutions">
+      <div class="shell">
+        <div class="section__head">
+          <div>
+            <p class="eyebrow">ENTERPRISE SOFTWARE</p>
+            <h2>Solutions Portfolio</h2>
+            <p>Specialized, scalable, and secure software products.</p>
+          </div>
+        </div>
+        <div class="solutions-portfolio">
+          <div class="solutions-list">
+            <div class="solution-item solution-item--active">
+              <span>Acme.erp</span>
+              <span>→</span>
+            </div>
+            <div class="solution-item">
+              <span>SmartSchoolPlus</span>
+              <span>→</span>
+            </div>
+            <div class="solution-item">
+              <span>HiGrade</span>
+              <span>→</span>
+            </div>
+            <div class="solution-item">
+              <span>MedSysB</span>
+              <span>→</span>
+            </div>
+            <div class="solution-item">
+              <span>Crisco</span>
+              <span>→</span>
+            </div>
+            <div class="solution-item">
+              <span>MicroFUND</span>
+              <span>→</span>
+            </div>
+            <div class="solution-item">
+              <span>eAUDITHub</span>
+              <span>→</span>
+            </div>
+          </div>
+          <div class="solution-detail">
+            <div class="card card--solution-detail">
+              <div class="solution-icon">📁</div>
+              <h3>Acme.erp</h3>
+              <p class="solution-subtitle">ENTERPRISE RESOURCE PLANNING</p>
+              <p>A comprehensive ERP suite designed to streamline operations across finance, human resources, supply
+                chain, and inventory management. Built for scalability and security, Acme.erp helps organizations
+                achieve operational excellence and data-driven decision making.</p>
+              <ul class="solution-features">
+                <li>✓ Inventory Management</li>
+                <li>✓ Supply Chain Optimization</li>
+                <li>✓ HR & Payroll</li>
+                <li>✓ Finances Reporting</li>
+              </ul>
+              <a href="#" class="link">View Product Details →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="services">
+      <div class="shell">
+        <div class="section__head">
+          <div>
+            <p class="eyebrow">OUR EXPERTISE</p>
+            <h2>Our Services</h2>
+            <p>Comprehensive technology services tailored to drive your business forward.</p>
+          </div>
+        </div>
+        <div class="grid grid--services">
+          <article class="card card--service">
+            <h3>App Modernization</h3>
+            <p>Transform legacy systems into modern, cloud-native applications that scale with your business.</p>
+            <a href="#" class="link">Know More →</a>
+          </article>
+          <article class="card card--service">
+            <h3>Bespoke Solution</h3>
+            <p>Custom-built software solutions designed specifically for your unique business requirements.</p>
+            <a href="#" class="link">Know More →</a>
+          </article>
+          <article class="card card--service">
+            <h3>Gen AI Systems</h3>
+            <p>Leverage artificial intelligence to automate processes and gain intelligent insights.</p>
+            <a href="#" class="link">Know More →</a>
+          </article>
+          <article class="card card--service">
+            <h3>ERP Customization</h3>
+            <p>Tailor your ERP system to match your workflows and business processes perfectly.</p>
+            <a href="#" class="link">Know More →</a>
+          </article>
+          <article class="card card--service">
+            <h3>Staff Augmentation</h3>
+            <p>Extend your team with skilled professionals who integrate seamlessly into your projects.</p>
+            <a href="#" class="link">Know More →</a>
+          </article>
+          <article class="card card--service">
+            <h3>Digital Marketing</h3>
+            <p>Boost your online presence and reach your target audience with data-driven strategies.</p>
+            <a href="#" class="link">Know More →</a>
+          </article>
+          <article class="card card--service">
+            <h3>Bosco Academy</h3>
+            <p>Comprehensive training programs to upskill your team on the latest technologies.</p>
+            <a href="#" class="link">Know More →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="ceo">
+      <div class="shell">
+        <div class="ceo-grid">
+          <div class="ceo-image">
+            <div class="ceo-photo">CEO Photo</div>
+            <div class="ceo-info">
+              <h3>Fr. Thaddeus Singarayan SDB</h3>
+              <p>CEO, BOSCOSOFT TECHNOLOGIES</p>
+            </div>
+          </div>
+          <div class="ceo-message">
+            <p class="eyebrow">FROM THE CEO'S DESK</p>
+            <h2>Leading with <span class="text-blue">Purpose & Innovation</span></h2>
+            <p>At BoscoSoftTech, we believe that technology should serve humanity. Our commitment to ethical practices,
+              innovation, and client success drives everything we do. We're not just building software—we're creating
+              solutions that transform organizations and empower communities.</p>
+            <p>Our vision is to be the trusted partner for organizations seeking sustainable, scalable, and secure
+              digital transformation. Through continuous innovation and a deep understanding of our clients' needs, we
+              deliver solutions that make a real difference.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="why-us">
+      <div class="shell">
+        <div class="section__head">
+          <div>
+            <h2>Why BoscoSoftTech</h2>
+            <p>Secure, scalable, and implementation-first.</p>
+          </div>
+        </div>
+        <div class="grid grid--why">
+          <div class="card card--stat">
+            <span class="kpi__value">ISO 27001</span>
+            <p>Certified security posture.</p>
+          </div>
+          <div class="card card--stat">
+            <span class="kpi__value">12 wks</span>
+            <p>Avg. go-live with migration.</p>
+          </div>
+          <div class="card card--stat">
+            <span class="kpi__value">24/7</span>
+            <p>Global support desks.</p>
+          </div>
+        </div>
+        <div class="logo-belt">
+          <span class="logo-belt__item">Client A</span>
+          <span class="logo-belt__item">Client B</span>
+          <span class="logo-belt__item">Client C</span>
+          <span class="logo-belt__item">Client D</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="cases">
+      <div class="shell">
+        <div class="section__head">
+          <div>
+            <h2>Resource Center</h2>
+            <p>Insights, stories, and research from our experts.</p>
+          </div>
+        </div>
+        <div class="resource-tabs">
+          <button class="resource-tab resource-tab--active">Success Stories</button>
+          <button class="resource-tab">White Papers</button>
+          <button class="resource-tab">Blogs</button>
+        </div>
+        <div class="grid grid--cases">
+          <article class="card card--case">
+            <span class="pill">FINTECH</span>
+            <h3>Banking System Overhaul for Regional Leader</h3>
+            <p>Complete digital transformation of core banking operations, resulting in improved efficiency and customer
+              satisfaction.</p>
+            <a class="link" href="#">Read Full Story →</a>
+          </article>
+          <article class="card card--case">
+            <span class="pill">HEALTHCARE</span>
+            <h3>Hospital Management System Implementation</h3>
+            <p>Streamlined patient care workflows and integrated billing systems for a major healthcare network.</p>
+            <a class="link" href="#">Read Full Story →</a>
+          </article>
+          <article class="card card--case">
+            <span class="pill">RETAIL</span>
+            <h3>Retail Chain ERP Integration</h3>
+            <p>Unified inventory and sales management across multiple locations, reducing costs and improving
+              visibility.</p>
+            <a class="link" href="#">Read Full Story →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="testimonials">
+      <div class="shell">
+        <div class="section__head">
+          <div>
+            <h2>What Our Clients Say</h2>
+          </div>
+        </div>
+        <div class="testimonial-carousel">
+          <button class="carousel-btn carousel-btn--prev" aria-label="Previous">‹</button>
+          <div class="testimonial-slider">
+            <div class="testimonial-card">
+              <div class="stars">★★★★★</div>
+              <p>"BoscoSoftTech transformed our operations completely. The implementation was seamless, and their
+                support team is always responsive. Highly recommended!"</p>
+              <div class="testimonial-author">
+                <div class="author-avatar">SJ</div>
+                <div>
+                  <div class="author-name">Sarah Jenkins</div>
+                  <div class="author-title">CTO, TechFlows</div>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial-card">
+              <div class="stars">★★★★★</div>
+              <p>"The ERP solution has streamlined our school management processes significantly. Parent engagement has
+                improved, and administrative tasks are now much more efficient."</p>
+              <div class="testimonial-author">
+                <div class="author-avatar">MC</div>
+                <div>
+                  <div class="author-name">Michael Chen</div>
+                  <div class="author-title">Director, Dreamwood Academy</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-btn carousel-btn--next" aria-label="Next">›</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta" id="demo">
+      <div class="shell cta__inner">
+        <div>
+          <h2>Ready to Transform Your Business?</h2>
+          <p>Join the list of global enterprises that trust BoscoSoftTech for their digital transformation journey.</p>
+        </div>
+        <div class="cta__actions">
+          <a href="#contact" class="btn btn--primary btn--lg">Contact Us Today</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" id="contact">
+    <div class="shell footer__grid">
+      <div class="footer-brand">
+        <div class="brand brand--white">BoscoSoftTech</div>
+        <p>Leading provider of enterprise resource planning solutions for schools, hospitals, churches, and corporate
+          entities. Transforming operations through innovative technology.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Solutions Portfolio</h4>
+        <ul>
+          <li><a href="#">Acme.erp</a></li>
+          <li><a href="#">SmartSchoolPlus</a></li>
+          <li><a href="#">HiGrade</a></li>
+          <li><a href="#">MedSysB</a></li>
+          <li><a href="#">Crisco</a></li>
+          <li><a href="#">MicroFUND</a></li>
+          <li><a href="#">eAUDITHub</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#">App Modernization</a></li>
+          <li><a href="#">Bespoke Solution</a></li>
+          <li><a href="#">Gen AI Systems</a></li>
+          <li><a href="#">ERP Customization</a></li>
+          <li><a href="#">Staff Augmentation</a></li>
+          <li><a href="#">Digital Marketing</a></li>
+          <li><a href="#">Bosco Academy</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h4>Contact Us</h4>
+        <ul>
+          <li>123 Business Street, Suite 100</li>
+          <li>City, State 12345</li>
+          <li><a href="tel:+10000000000">+1 (000) 000-0000</a></li>
+          <li><a href="mailto:info@boscosofttech.com">info@boscosofttech.com</a></li>
+          <li><a href="#">Chat with AI Assistant</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="shell footer-bottom__inner">
+        <div class="footer-copyright">© 2023 BoscoSoftTech. All rights reserved.</div>
+        <div class="footer-legal">
+          <a href="#">Terms of Use</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Refund Policy</a>
+        </div>
+        <div class="footer-social">
+          <a href="#" aria-label="Facebook">f</a>
+          <a href="#" aria-label="Twitter">t</a>
+          <a href="#" aria-label="Instagram">i</a>
+          <a href="#" aria-label="LinkedIn">in</a>
+          <a href="#" aria-label="YouTube">yt</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
 </body>
+
 </html>
